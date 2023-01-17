@@ -26,14 +26,3 @@ $allFiles = array_merge($rootFiles, $subdirectoryFiles);
 foreach($allFiles as $filename) {
   include_once($filename);
 }
-
-// Hooks
-
-add_action('init', 'fsd_register_blocks');
-
-function fsd_register_blocks() {
-  register_block_type(
-    FSD_PLUGIN_DIR . 'build/blocks/daily-post', 
-    ['render_callback' => 'fsd_daily_post_render_cb']
-  );
-}
