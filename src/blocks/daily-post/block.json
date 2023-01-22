@@ -7,5 +7,11 @@
   "category": "text",
   "description": "Displays a random post each day",
   "textdomain": "fsd",
+  "attributes": {
+    "count": {
+      "type": "number",
+      "default": 1
+    }
+  },
   "editorScript": "file:./index.js"
 }
