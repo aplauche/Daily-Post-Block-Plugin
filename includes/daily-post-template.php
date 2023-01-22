@@ -1,9 +1,8 @@
 <?php
 
 
-function fsd_daily_post_render_cb($atts){
+function fsd_daily_post_render_cb(){
 
-  $title = esc_html( $atts["title"] );
   $id = get_transient( 'fsd_daily_post_id' );
 
   if(!$id){
